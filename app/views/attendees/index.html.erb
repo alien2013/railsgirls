@@ -8,7 +8,8 @@
     <th>Address</th>
     <th>Picture</th>
     <th>Studienfach</th>
-
+    <th>Lieblingsfarbe</th>
+    <th>Alter</th>
     <th></th>
     <th></th>
     <th></th>
@@ -21,10 +22,13 @@
     <td><%= attendee.bio %></td>
     <td><%= attendee.address %></td>
     <td><%= image_tag(attendee.picture_url, :width => 100) if attendee.picture.present? %></td>
+    <td><%= attendee.studies %></td>
+    <td><%= attendee.color %></td>
+    <td><%= attendee.age %></td>
     <td><%= link_to 'Show', attendee %></td>
     <td><%= link_to 'Edit', edit_attendee_path(attendee) %></td>
     <td><%= link_to 'Destroy', attendee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    <td><%= attendee.studies %></td>
+
 
   </tr>
 <% end %>

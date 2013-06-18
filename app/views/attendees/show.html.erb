@@ -28,7 +28,14 @@
   <b>Studienfach:</b>
   <%= @attendee.studies %>
 </p>
-
+<p>
+  <b>Lieblingsfarbe:</b>
+  <%= @attendee.color %>
+</p>
+<p>
+  <b>Alter:</b>
+  <%= @attendee.age %>
+</p>
 
 <%= link_to 'Edit', edit_attendee_path(@attendee) %> |
 <%= link_to 'Back', attendees_path %>
